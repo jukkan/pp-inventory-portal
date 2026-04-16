@@ -2,11 +2,10 @@ select signal, resource_type, count(*) as count
 from (
   select
     case
-      when is_orphaned = 'true'            then 'orphaned'
-      when has_broken_connections = 'true' then 'broken'
-      when shared_with_tenant = 'true'     then 'overshared'
-      when has_premium_connectors = 'true'
-       and is_solution_artifact = 'false'  then 'premium-risk'
+      when is_orphaned             = 1 then 'orphaned'
+      when has_broken_connections  = 1 then 'broken'
+      when shared_with_tenant      = 1 then 'overshared'
+      when premium_not_in_solution = 1 then 'premium-risk'
       else 'clean'
     end as signal,
     resource_type

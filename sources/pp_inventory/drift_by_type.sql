@@ -1,17 +1,17 @@
 select 'Flows'  as resource_type,
-       sum(inv_flow_count)  as native_count,
-       sum(coe_flow_count)  as coe_count,
-       sum(flow_delta)      as delta
+       CAST(sum(inv_flow_count)  AS INT) as native_count,
+       CAST(sum(coe_flow_count)  AS INT) as coe_count,
+       CAST(sum(flow_delta)      AS INT) as delta
 from silver_environments
 union all
 select 'Apps',
-       sum(inv_app_count),
-       sum(coe_app_count),
-       sum(app_delta)
+       CAST(sum(inv_app_count)   AS INT),
+       CAST(sum(coe_app_count)   AS INT),
+       CAST(sum(app_delta)       AS INT)
 from silver_environments
 union all
 select 'Agents',
-       sum(inv_agent_count),
-       sum(coe_agent_count),
-       sum(agent_delta)
+       CAST(sum(inv_agent_count) AS INT),
+       CAST(sum(coe_agent_count) AS INT),
+       CAST(sum(agent_delta)     AS INT)
 from silver_environments

@@ -1,10 +1,9 @@
 select
   resource_type,
-  count(*)                                                           as resource_count,
-  sum(case when is_orphaned = 'true' then 1 else 0 end)             as orphaned,
-  sum(case when has_broken_connections = 'true' then 1 else 0 end)  as broken,
-  sum(case when has_premium_connectors = 'true'
-            and is_solution_artifact = 'false' then 1 else 0 end)   as premium_risk
+  CAST(count(*) AS INT) as resource_count,
+  CAST(sum(case when is_orphaned            = 1 then 1 else 0 end) AS INT) as orphaned,
+  CAST(sum(case when has_broken_connections = 1 then 1 else 0 end) AS INT) as broken,
+  CAST(sum(case when premium_not_in_solution = 1 then 1 else 0 end) AS INT) as premium_risk
 from silver_resources
 group by resource_type
-order by resource_count desc
+order by count(*) desc
