@@ -60,7 +60,7 @@ where environment_name = '${params.environment_name}'
   <Column id=display_name title="Name" />
   <Column id=resource_type title="Type" />
   <Column id=primary_signal title="Signal"
-    contentType=colorscale scaleColor=red />
+    contentType=colorscale colorScale=red />
   <Column id=is_solution_artifact title="In solution" />
   <Column id=has_premium_connectors title="Premium" />
   <Column id=created_at title="Created" />

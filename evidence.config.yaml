@@ -25,20 +25,13 @@ theme:
         - "#1e293b"
         - "#6366f1"
   colors:
-    primary:
-      dark: "#6366f1"
-    accent:
-      dark: "#a78bfa"
-    base:
-      dark: "#09090b"
-    info:
-      dark: "#38bdf8"
-    positive:
-      dark: "#4ade80"
-    warning:
-      dark: "#fbbf24"
-    negative:
-      dark: "#f87171"
+    primary: "#6366f1"
+    accent: "#a78bfa"
+    base: "#09090b"
+    info: "#38bdf8"
+    positive: "#4ade80"
+    warning: "#fbbf24"
+    negative: "#f87171"
 
 plugins:
   components:

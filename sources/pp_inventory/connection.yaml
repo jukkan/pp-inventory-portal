@@ -1,11 +1,4 @@
 name: pp_inventory
-type: mssql
+type: duckdb
 options:
-  server: ${FABRIC_SQL_SERVER}
-  database: pp_inventory
-  authenticationType: azure-active-directory-service-principal-secret
-  spclientid: ${AZURE_CLIENT_ID}
-  spclientsecret: ${AZURE_CLIENT_SECRET}
-  sptenantid: ${AZURE_TENANT_ID}
-  encrypt: true
-  trustServerCertificate: false
+  filename: ":memory:"

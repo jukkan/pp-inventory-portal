@@ -1,0 +1,18 @@
+environment_id,environment_name,environment_type,location,created_at,inv_flow_count,inv_agent_count,inv_app_count,coe_environment_name,coe_app_count,coe_flow_count,coe_environment_sku,governance_level,security_group,coe_agent_count,flow_delta,app_delta,agent_delta,has_delta
+8c259ee3-dc49-efb4-900d-6e3b0b1e1d42,NA Production,Production,europe,2024-03-22T07:16:02.7446282Z,2,31,12,,0,0,,,,0,2,12,31,True
+77fd722e-41a8-e88c-9fe4-b774a0a7c9f7,NA Sweden,Sandbox,sweden,2025-12-03T09:13:18.1270028Z,0,0,4,,0,0,,,,0,0,4,0,True
+ac102d51-abcb-46c3-a797-5f8a9d91a813,Default Dumpyard,Default,europe,2016-12-26T19:58:33.0555843Z,51,0,16,,0,0,,,,0,51,16,0,True
+36305c6e-5863-e6be-b46d-256c924db04d,Dynamics 365 Demos,Sandbox,europe,2025-02-11T11:55:42.9172617Z,19,34,18,,0,0,,,,0,19,18,34,True
+7ce22c81-4423-e0e3-8544-8f00b0f9de42,Elmo's Developer Environment,Developer,europe,2024-06-19T09:13:32.8651941Z,0,2,5,,0,0,,,,0,0,5,2,True
+61cedc0d-ec3c-e0dd-aee1-9d28054f745e,Jukka PAYG,Sandbox,europe,2024-12-20T08:50:24.9786927Z,43,13,29,,0,0,,,,0,43,29,13,True
+ea52b04e-1716-e2c4-bad3-d7223166d85e,NA Test,Sandbox,europe,2024-03-22T06:51:54.6352532Z,2,31,14,,0,0,,,,0,2,14,31,True
+5ada35f2-6414-e119-94df-55fde7f8e354,Playground,Teams,europe,2024-05-30T11:42:30.4079658Z,0,0,2,,0,0,,,,0,0,2,0,True
+822f2c7b-77c0-e249-a354-0f4fc00a7758,RapidStart Finland,Production,europe,2025-02-06T10:28:58.839919Z,1,1,13,,0,0,,,,0,1,13,1,True
+946a22fa-8943-e81a-b0d3-014638ec3f0e,Jukka Preview,Sandbox,unitedstatesfirstrelease,2022-09-27T09:54:39.6335196Z,0,0,0,,0,0,,,,0,0,0,0,False
+d76c79ad-7c3c-46e9-b6bf-c847f24da18c,Jukka V9 (d8570803009),Production,europe,2017-10-13T10:00:00.2317079Z,1,0,0,,0,0,,,,0,1,0,0,True
+6e8e74b3-4b16-ef39-acd4-4dac3e9f3554,AutoPilot Engineering (demo),Production,europe,2024-03-26T11:53:56.2510877Z,15,2,25,,0,0,,,,0,15,25,2,True
+508e15a0-8f26-e7fa-871a-40a944ed2d4d,CoE,Production,europe,2024-03-22T08:02:23.7494147Z,133,1,25,,0,0,,,,0,133,25,1,True
+a7f4b6af-b45f-4d19-8a86-ded4333ade34,Jukka's Test Cloud,Production,europe,2017-08-16T17:17:20.3896866Z,2,0,0,,0,0,,,,0,2,0,0,True
+ac06d551-f742-e5b0-b77f-c1c9680f8d09,Jukka's US Preview Dev,Developer,unitedstatesfirstrelease,2024-07-20T12:32:06.3162873Z,32,5,15,,0,0,,,,0,32,15,5,True
+79a03666-63eb-ea43-b208-7d26c106c040,Microsoft 365,Production,europe,2025-03-31T05:52:09.6490838Z,0,1,3,,0,0,,,,0,0,3,1,True
+55c9920f-e04f-eb2d-a901-881e85e62142,NA Dev,Developer,europe,2024-03-16T03:54:59.9006184Z,4,3,7,,0,0,,,,0,4,7,3,True

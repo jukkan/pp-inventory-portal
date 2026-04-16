@@ -51,7 +51,7 @@ order by
     linkPrefix="/environment/" />
   <Column id=environment_type title="Env type" />
   <Column id=primary_signal title="Signal"
-    contentType=colorscale scaleColor=red />
+    contentType=colorscale colorScale=red />
   <Column id=created_at title="Created" />
 </DataTable>
 

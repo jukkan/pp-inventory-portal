@@ -26,19 +26,9 @@ jobs:
 
       - name: Run sources
         run: npm run sources
-        env:
-          FABRIC_SQL_SERVER:   ${{ secrets.FABRIC_SQL_SERVER }}
-          AZURE_CLIENT_ID:     ${{ secrets.AZURE_CLIENT_ID }}
-          AZURE_CLIENT_SECRET: ${{ secrets.AZURE_CLIENT_SECRET }}
-          AZURE_TENANT_ID:     ${{ secrets.AZURE_TENANT_ID }}
 
       - name: Build
         run: npm run build
-        env:
-          FABRIC_SQL_SERVER:   ${{ secrets.FABRIC_SQL_SERVER }}
-          AZURE_CLIENT_ID:     ${{ secrets.AZURE_CLIENT_ID }}
-          AZURE_CLIENT_SECRET: ${{ secrets.AZURE_CLIENT_SECRET }}
-          AZURE_TENANT_ID:     ${{ secrets.AZURE_TENANT_ID }}
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v4
