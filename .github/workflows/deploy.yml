@@ -11,9 +11,21 @@ jobs:
     permissions:
       contents: write
 
+    env:
+      EVIDENCE_SOURCE__pp_inventory__clientid: ${{ secrets.FABRIC_CLIENT_ID }}
+      EVIDENCE_SOURCE__pp_inventory__clientsecret: ${{ secrets.FABRIC_CLIENT_SECRET }}
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Install ODBC Driver 18 for SQL Server
+        run: |
+          curl -fsSL https://packages.microsoft.com/keys/microsoft.asc | sudo gpg --dearmor -o /usr/share/keyrings/microsoft-prod.gpg
+          curl -fsSL https://packages.microsoft.com/config/ubuntu/$(lsb_release -rs)/prod.list | sudo tee /etc/apt/sources.list.d/mssql-release.list
+          sudo apt-get update
+          sudo ACCEPT_EULA=Y apt-get install -y msodbcsql18
+          sudo apt-get install -y unixodbc-dev
 
       - name: Set up Node
         uses: actions/setup-node@v4

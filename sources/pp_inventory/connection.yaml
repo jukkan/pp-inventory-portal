@@ -1,4 +1,5 @@
 name: pp_inventory
-type: duckdb
+type: fabric
 options:
-  filename: ":memory:"
+  server: kewrblglvpbunj4xl6fj3enicm-nbqkmhcyvveuhdiaygrq4xkq6q.datawarehouse.fabric.microsoft.com
+  database: pp_inventory

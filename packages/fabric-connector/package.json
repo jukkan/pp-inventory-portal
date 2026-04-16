@@ -1,0 +1,9 @@
+{
+  "name": "evidence-connector-fabric",
+  "version": "1.0.0",
+  "description": "Evidence source connector for Microsoft Fabric SQL analytics endpoint via ODBC",
+  "main": "index.cjs",
+  "evidence": {
+    "datasources": ["fabric"]
+  }
+}
