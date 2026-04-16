@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/favicon.ico" sizes="32x32" />
+		<link rel="icon" href="/icon.svg" type="image/svg+xml" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+		<link rel="manifest" href="/manifest.webmanifest" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<script>
+			try {
+				/** @type {'light' | 'dark' | 'system'} */
+				const savedTheme = localStorage.getItem('evidence-theme') ?? 'system';
+				const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+				const theme = savedTheme === 'system' ? (prefersDark ? 'dark' : 'light') : savedTheme;
+				document.documentElement.setAttribute('data-theme', theme);
+			} catch (e) {}
+		</script>
+		
+		<link href="/_app/immutable/assets/0.DWlmVRqw.css" rel="stylesheet">
+		<link href="/_app/immutable/assets/VennDiagram.BCpuTJYF.css" rel="stylesheet">
+		<link rel="modulepreload" href="/_app/immutable/entry/start.P_WuY8C3.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/entry.Dslequ3L.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/scheduler.Chp-6KEy.js">
+		<link rel="modulepreload" href="/_app/immutable/entry/app.BEJg7uRx.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/preload-helper.D7HrI6pR.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/index.iyMHHYU1.js">
+		<link rel="modulepreload" href="/_app/immutable/nodes/0.ByvaUfXF.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/index.rV6zwFgL.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/VennDiagram.svelte_svelte_type_style_lang.Dcyzw1r6.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/setTrackProxy.DjIbdjlZ.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/stores.CT95JE8N.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/index.B0foz8vy.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/scroll.CR7o2Ky_.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/button.7O04kgSU.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/AccordionItem.BRJHdunu.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/checkRequiredProps.o_C_V3S5.js">
+		<link rel="modulepreload" href="/_app/immutable/nodes/9.Dz30rti8.js"><title>How This Was Built</title><!-- HEAD_svelte-2igo1p_START --> <meta property="og:title" content="How This Was Built"> <meta name="twitter:title" content="How This Was Built"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@evidence_dev"> <!-- HEAD_svelte-2igo1p_END -->
+	</head>
+	<body>
+		<script>
+			
+		</script>
+		<div>
+			<!-- SvelteKit Hydrated Content -->
+			   <div class="z-[1] fixed right-0 bottom-0 mx-10 my-6 w-80"></div> <div data-sveltekit-preload-data="hover" class="antialiased"> <header class="fixed w-full top-0 z-40 flex h-12 shrink-0 justify-start items-center gap-x-4 border-b border-base-300/50 bg-base-100/90 backdrop-blur print:hidden"><div class=" max-w-7xl mx-auto px-5 sm:px-6 md:px-12 flex flex-1 items-center justify-between" style="max-width:undefinedpx;"><div class="flex gap-x-4 items-center"><button type="button" class="text-base-content hover:bg-base-200 rounded-lg p-1 -ml-1 transition-all duration-500 md:hidden"><span class="sr-only" data-svelte-h="svelte-73kebv">Open sidebar</span> <svg class="w-5 h-5" width="100%" height="100%" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M4 6l16 0"></path><path d="M4 12l16 0"></path><path d="M4 18l16 0"></path></svg></button> <a href="/" class="text-sm font-bold text-base-content hidden md:block"><img src="/_app/immutable/assets/wordmark-black.rfl-FBgf.png" alt="Home" class="h-5 aspect-auto block dark:hidden" href="/"> <img src="/_app/immutable/assets/wordmark-white.C8ZS96Ri.png" alt="Home" class="h-5 aspect-auto hidden dark:block" href="/"></a></div> <div class="flex gap-2 text-sm items-center"> <div class="flex gap-2 items-center">   </div> <div class="relative"> <button type="button" tabindex="0" aria-controls="W-Z6onR_cF" aria-expanded="false" data-state="closed" id="O1sc32_B6p" data-melt-dropdown-menu-trigger="" data-menu-trigger="" class="inline-flex items-center justify-center font-medium whitespace-nowrap transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-base-content-muted disabled:pointer-events-none disabled:opacity-50 hover:text-base-content h-8 rounded-md text-xs px-1 hover:bg-base-200 shadow-base-200" aria-label="Menu" data-button-root=""><svg class="h-6 w-6" width="100%" height="100%" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M5 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path><path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path><path d="M19 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path></svg></button> </div></div></div></header> <div class=" max-w-7xl print:w-[650px] print:md:w-[841px] mx-auto print:md:px-0 print:px-0 px-6 sm:px-8 md:px-12 flex justify-start" style="max-width:undefinedpx;"><div class="print:hidden">  <aside class="w-48 flex-none hidden md:flex"><div class="hidden: md:block fixed w-48 top-20 bottom-8 overflow-y-auto flex-1 text-sm pretty-scrollbar"><div class="flex flex-col pb-6"><a class="sticky top-0 bg-base-100 shadow shadow-base-100 font-semibold pb-1 mb-1 group inline-block capitalize hover:underline text-base-heading" href="/">Home</a>  <a class="group inline-block py-1 capitalize transition-all duration-100 text-base-content-muted hover:text-base-content" href="/environments">Environment Drift  </a> <a class="group inline-block py-1 capitalize transition-all duration-100 text-primary" href="/how-it-works">How This Was Built  </a> <a class="group inline-block py-1 capitalize transition-all duration-100 text-base-content-muted hover:text-base-content" href="/resources">Resource Browser  </a></div> </div> <div class="fixed bottom-0 text-xs py-2" data-svelte-h="svelte-fworv4"><a href="https://www.evidence.dev" class="bg-gradient-to-r inline-block antialiased font-medium">Built with Evidence</a></div></aside></div> <main class="md:pl-8 md:pr-8  mt-16 sm:mt-20 flex-grow overflow-x-hidden print:px-0 print:mt-8"><div class="print:hidden"><div class="flex items-start mt-0 whitespace-nowrap overflow-auto"><div class="inline-flex items-center text-sm capitalize gap-1 text-base-content-muted mb-2 sm:mb-4"><a href="/" class="hover:underline">Home </a><svg class="icon icon-tabler icon-tabler-chevron-right" width="12px" height="12px" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M9 6l6 6l-6 6"></path></svg> <a href="/how-it-works" class="hover:underline">How This Was Built</a></div></div></div> <article id="evidence-main-article" class="select-text markdown pb-10">  <h1 class="title">How This Was Built</h1>    <h1 class="markdown" id="how-this-portal-was-built" data-svelte-h="svelte-1gu5w2p"><a href="#how-this-portal-was-built">How this portal was built</a></h1> <p class="markdown" data-svelte-h="svelte-sjy23c"><strong class="markdown">No GUI was opened. No drag-and-drop. No scheduled refresh wizard.</strong></p> <p class="markdown" data-svelte-h="svelte-193930f">This entire portal was generated from:</p> <ul class="markdown" data-svelte-h="svelte-1tktj5j"><li class="markdown">SQL queries against a Microsoft Fabric Lakehouse</li> <li class="markdown">Markdown files in a Git repository</li> <li class="markdown">One <code class="markdown">npm run build</code> command</li></ul> <p class="markdown" data-svelte-h="svelte-1eheneo">The tool is <a href="https://evidence.dev" rel="nofollow" class="markdown">Evidence.dev</a> — open source, MIT
+licensed. The data lives in a Fabric F2 capacity on Azure Sponsorship
+credits. The build output is a static HTML site deployed to GitHub Pages
+via a GitHub Actions workflow on every <code class="markdown">git push</code>.</p> <hr class="markdown"> <h2 class="markdown" id="the-full-stack" data-svelte-h="svelte-pq1w3w"><a href="#the-full-stack">The full stack</a></h2> <table class="markdown" data-svelte-h="svelte-t305oo"><thead class="markdown"><tr class="markdown"><th class="markdown">Layer</th> <th class="markdown">Technology</th> <th class="markdown">How it was built</th></tr></thead> <tbody class="markdown"><tr class="markdown"><td class="markdown">Data capture</td> <td class="markdown">Power Platform Inventory API + CoE Dataverse export</td> <td class="markdown">Python scripts, PAC CLI</td></tr> <tr class="markdown"><td class="markdown">Storage</td> <td class="markdown">Fabric Lakehouse (Delta tables)</td> <td class="markdown">PySpark notebook, Fabric REST API</td></tr> <tr class="markdown"><td class="markdown">Transformation</td> <td class="markdown">PySpark notebooks (bronze → silver)</td> <td class="markdown">Claude Code CLI + Fabric MCP</td></tr> <tr class="markdown"><td class="markdown">Portal</td> <td class="markdown">Evidence.dev</td> <td class="markdown">Claude Code CLI / Codex</td></tr> <tr class="markdown"><td class="markdown">Hosting</td> <td class="markdown">GitHub Pages</td> <td class="markdown"><code class="markdown">git push</code> → GitHub Actions</td></tr></tbody></table> <p class="markdown" data-svelte-h="svelte-1aqzid2"><strong class="markdown">Total GUI interactions to build this portal: 0.</strong></p> <hr class="markdown"> <h2 class="markdown" id="example-the-heatmap-on-the-overview-page" data-svelte-h="svelte-1md03cf"><a href="#example-the-heatmap-on-the-overview-page">Example: The heatmap on the overview page</a></h2> <p class="markdown" data-svelte-h="svelte-7t50ep">The governance heatmap is this SQL query in
+<code class="markdown">sources/pp_inventory/signals_by_environment.sql</code>:</p> <div class="mt-2 mb-4 bg-base-200 border border-base-300 rounded-md px-3 py-2 relative group"><button class="absolute opacity-0 rounded p-1 group-hover:opacity-100 hover:bg-base-300/30 top-2 right-2 h-6 w-6 z-10 transition-all duration-200 ease-in-out text-base-content-muted active:bg-base-300/50"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" width="100%" height="100%" preserveAspectRatio="xMidYMid meet"><path d="M28,10V28H10V10H28m0-2H10a2,2,0,0,0-2,2V28a2,2,0,0,0,2,2H28a2,2,0,0,0,2-2V10a2,2,0,0,0-2-2Z"></path><path d="M4,18H2V4A2,2,0,0,1,4,2H18V4H4Z"></path></svg></button> <pre class="overflow-auto pretty-scrollbar"><code class="language-sql text-sm">select
+  environment_name,
+  signal,
+  count(*) as signal_count
+from silver_governance_signals
+group by environment_name, signal
+order by environment_name, signal</code></pre></div> <p class="markdown" data-svelte-h="svelte-3n2ckf">And this Evidence markdown in <code class="markdown">pages/index.md</code>:</p>  <p class="markdown" data-svelte-h="svelte-xu8hfw">That is the entire definition of the chart. The SQL runs once at build
+time against the Fabric Lakehouse SQL analytics endpoint. The output is
+a pre-rendered static HTML file that loads in milliseconds — no database
+connection required at read time.</p> <hr class="markdown"> <h2 class="markdown" id="example-the-coe-drift-alert" data-svelte-h="svelte-16lzfln"><a href="#example-the-coe-drift-alert">Example: The CoE drift alert</a></h2> <p class="markdown" data-svelte-h="svelte-fgjzk3">The alert on the <a href="/environment/CoE" class="markdown">CoE environment page</a> is not
+hardcoded. It is conditional Evidence markup that fires whenever
+<code class="markdown">total_drift &gt; 0</code>:</p>  <p class="markdown" data-svelte-h="svelte-1ni4cmm">The 133-flow delta in the CoE environment triggers this automatically
+from the data. A different tenant, different numbers — same code.</p> <hr class="markdown"> <h2 class="markdown" id="the-deployment-pipeline" data-svelte-h="svelte-iedtb4"><a href="#the-deployment-pipeline">The deployment pipeline</a></h2> <p class="markdown" data-svelte-h="svelte-jtilr5">Every <code class="markdown">git push</code> to <code class="markdown">main</code> triggers this GitHub Actions workflow:</p> <div class="mt-2 mb-4 bg-base-200 border border-base-300 rounded-md px-3 py-2 relative group"><button class="absolute opacity-0 rounded p-1 group-hover:opacity-100 hover:bg-base-300/30 top-2 right-2 h-6 w-6 z-10 transition-all duration-200 ease-in-out text-base-content-muted active:bg-base-300/50"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" width="100%" height="100%" preserveAspectRatio="xMidYMid meet"><path d="M28,10V28H10V10H28m0-2H10a2,2,0,0,0-2,2V28a2,2,0,0,0,2,2H28a2,2,0,0,0,2-2V10a2,2,0,0,0-2-2Z"></path><path d="M4,18H2V4A2,2,0,0,1,4,2H18V4H4Z"></path></svg></button> <pre class="overflow-auto pretty-scrollbar"><code class="language-yaml text-sm">- run: npm run sources    # queries Fabric Lakehouse
+- run: npm run build      # generates static HTML
+- uses: peaceiris/actions-gh-pages@v4
+  with:
+    publish_dir: ./build  # pushes to gh-pages branch</code></pre></div> <p class="markdown" data-svelte-h="svelte-v14sb5">Credentials are stored as GitHub Actions secrets — never in the
+repository. The static output has no connection strings. The Fabric SQL
+analytics endpoint requires a valid Entra token to query; the published
+site has no path back to it.</p> <p class="markdown" data-svelte-h="svelte-1ka2l3d">To rebuild with fresh data without a code change: Actions tab →
+&quot;Deploy to GitHub Pages&quot; → Run workflow.</p> <hr class="markdown"> <h2 class="markdown" id="the-2020-answer-vs-the-2026-answer" data-svelte-h="svelte-1hr2mu9"><a href="#the-2020-answer-vs-the-2026-answer">The 2020 answer vs the 2026 answer</a></h2> <p class="markdown" data-svelte-h="svelte-1eh0fhg"><strong class="markdown">2020:</strong> Install CoE Starter Kit (multiple components, multiple days),
+wait for initial sync (24–48h), build Power BI reports manually,
+maintain a scheduled refresh, manage a data gateway, explain to users
+why the numbers don&#39;t match native inventory.</p> <p class="markdown" data-svelte-h="svelte-1hubf4k"><strong class="markdown">2026:</strong> Capture inventory via API (Python, 10 minutes), land in Fabric
+Lakehouse (notebook, 30 minutes), generate portal from SQL + markdown
+(Claude Code, 2 hours). Deploy with <code class="markdown">git push</code>. One afternoon.</p> <p class="markdown" data-svelte-h="svelte-7igt7i">The underlying principle has not changed:
+<em class="markdown">Inventory is data. Treat it like data.</em></p> <p class="markdown" data-svelte-h="svelte-1kbooum">What changed is that the tooling finally caught up.</p> <hr class="markdown"> <p class="markdown" data-svelte-h="svelte-1hhuj2s"><em class="markdown">Source: <a href="https://github.com/jukkan/pp-inventory-portal" rel="nofollow" class="markdown">github.com/jukkan/pp-inventory-portal</a></em></p></article></main> <div class="print:hidden"><aside class="hidden lg:block w-48"><div class="fixed w-48 top-20 bottom-20 pl-4 px-3 overflow-auto pretty-scrollbar"></div></aside></div></div></div>  
+			<script type="application/json" data-sveltekit-fetched data-url="/api/customFormattingSettings.json/GET.json">{"status":200,"statusText":"","headers":{},"body":"{\"customFormattingSettings\":{\"version\":\"1.0\",\"customFormats\":[]}}"}</script>
+			<script type="application/json" data-sveltekit-fetched data-url="/api/pagesManifest.json">{"status":200,"statusText":"","headers":{},"body":"{\"label\":\"Home\",\"href\":\"/\",\"children\":{\"environment\":{\"label\":\"environment\",\"children\":{\"[environment_name]\":{\"children\":{},\"frontMatter\":{\"title\":\"{params.environment_name}\"},\"isTemplated\":true,\"isPage\":true}},\"frontMatter\":{},\"isTemplated\":false,\"isPage\":false},\"environments\":{\"label\":\"environments\",\"href\":\"/environments\",\"children\":{},\"frontMatter\":{\"title\":\"Environment Drift\"},\"isTemplated\":false,\"isPage\":true},\"how-it-works\":{\"label\":\"how it works\",\"href\":\"/how-it-works\",\"children\":{},\"frontMatter\":{\"title\":\"How This Was Built\"},\"isTemplated\":false,\"isPage\":true},\"resources\":{\"label\":\"resources\",\"href\":\"/resources\",\"children\":{},\"frontMatter\":{\"title\":\"Resource Browser\"},\"isTemplated\":false,\"isPage\":true}},\"frontMatter\":{\"title\":\"PP Inventory Portal\"},\"isTemplated\":false,\"isPage\":true}"}</script>
+			<script type="application/json" data-sveltekit-fetched data-url="/api//how-it-works/evidencemeta.json">{"status":200,"statusText":"","headers":{},"body":"{\"queries\":[{\"id\":\"untitled\",\"compiledQueryString\":\"\u003CHeatmap\\n  data={heatmap_data}\\n  x=signal\\n  y=environment_name\\n  value=signal_count\\n  colorScale={['#1e293b','#7f1d1d','#991b1b','#dc2626','#ef4444']}\\n/>\",\"inputQueryString\":\"\u003CHeatmap\\n  data={heatmap_data}\\n  x=signal\\n  y=environment_name\\n  value=signal_count\\n  colorScale={['#1e293b','#7f1d1d','#991b1b','#dc2626','#ef4444']}\\n/>\",\"compiled\":false,\"inline\":true},{\"id\":\"untitled\",\"compiledQueryString\":\"{#if env_drift[0].total_drift > 0}\\n\u003CAlert status=\\\"warning\\\">\\n  This environment has a drift of {env_drift[0].total_drift} units.\\n\u003C/Alert>\\n{/if}\",\"inputQueryString\":\"{#if env_drift[0].total_drift > 0}\\n\u003CAlert status=\\\"warning\\\">\\n  This environment has a drift of {env_drift[0].total_drift} units.\\n\u003C/Alert>\\n{/if}\",\"compiled\":false,\"inline\":true}]}"}</script>
+			<script>
+				{
+					__sveltekit_1b2c9ps = {
+						base: ""
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null];
+
+					Promise.all([
+						import("/_app/immutable/entry/start.P_WuY8C3.js"),
+						import("/_app/immutable/entry/app.BEJg7uRx.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 9],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		
+
+			<!-- SplashScreen -->
+			<div
+				aria-disabled
+				id="__evidence_project_splash"
+				data-test-id="__evidence_project_splash"
+				style="visibility: hidden"
+			>
+				<svg width="100" height="100" viewBox="-8 -8 588 588" xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="M7.19462e-05 74.3583C109.309 74.3583 195.795 86.2578 286.834 37.825C377.872 -10.6077 466.416 1.29174 573.667 1.29175L573.667 126.549C466.416 126.549 377.373 114.91 286.834 163.082C196.294 211.254 109.309 199.615 6.11417e-05 199.615L7.19462e-05 74.3583Z"
+						class="draw-path"
+					/>
+					<path
+						d="M573.669 499.31C464.36 499.31 377.874 487.411 286.835 535.843C195.797 584.276 107.252 572.377 0.0014801 572.377V447.12C107.252 447.12 196.295 458.758 286.835 410.586C377.375 362.415 464.36 374.053 573.669 374.053V499.31Z"
+						class="draw-path"
+					/>
+					<path
+						d="M452.896 186.499C395.028 187.686 341.581 194.947 286.835 224.074C211.396 264.212 136.995 262.826 52.2355 261.247C35.2696 260.931 17.8887 260.608 0.0014801 260.608V385.865C18.1032 385.865 35.6721 386.204 52.81 386.534C137.212 388.162 211.162 389.589 286.835 349.331C341.838 320.07 395.18 312.831 452.896 311.685V186.499Z"
+						class="draw-path"
+					/>
+				</svg>
+			</div>
+		</div>
+	</body>
+</html>
+
+<style>
+	#__evidence_project_splash {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		background-color: #ffffff;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		z-index: 9999;
+	}
+
+	[data-theme='dark'] #__evidence_project_splash {
+		background-color: #000000;
+	}
+
+	.draw-path {
+		fill: #000000;
+		animation: blinking-logo 2s;
+		animation-fill-mode: both;
+		animation-iteration-count: infinite;
+		animation-timing-function: ease-in-out;
+	}
+
+	[data-theme='dark'] .draw-path {
+		fill: #ffffff;
+	}
+
+	@keyframes blinking-logo {
+		0% {
+			fill-opacity: 1;
+		}
+		50% {
+			fill-opacity: 0.2;
+		}
+		100% {
+			fill-opacity: 1;
+		}
+	}
+</style>

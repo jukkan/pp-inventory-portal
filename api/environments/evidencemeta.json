@@ -1,0 +1,1 @@
+{"queries":[{"id":"drift","compiledQueryString":"select * from pp_inventory.environment_drift","inputQueryString":"select * from pp_inventory.environment_drift","compiled":false,"inline":true},{"id":"drift_by_type","compiledQueryString":"select * from pp_inventory.drift_by_type","inputQueryString":"select * from pp_inventory.drift_by_type","compiled":false,"inline":true}]}

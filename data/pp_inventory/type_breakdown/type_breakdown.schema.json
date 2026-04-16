@@ -1,0 +1,1 @@
+[{"name":"resource_type","evidenceType":"string","typeFidelity":"precise"},{"name":"resource_count","evidenceType":"number","typeFidelity":"precise"},{"name":"orphaned","evidenceType":"number","typeFidelity":"precise"},{"name":"broken","evidenceType":"number","typeFidelity":"precise"},{"name":"premium_risk","evidenceType":"number","typeFidelity":"precise"}]
